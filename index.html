@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <script src="./assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/bb54014cd5.js"></script>
 
     <title>Tripadvisor : aaah Paris!</title>
@@ -37,8 +37,33 @@
           <div><i class="far fa-bell"></i> <span>&nbsp;Alertes</span></div>
           <div><i class="far fa-heart"></i> <span>&nbsp;Voyages</span></div>
           
-          <button class="avatar">Connectez-vous</button>
-          
+           <!-- Trigger/Open The Modal -->
+      <button id="avatar">Open Modal</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class=box-formulaire">
+          <form id="contactForm">
+            <h1>Formulaire de contact</h1>
+            <input type="text" id="firstname" placeholder="Prénom" />
+            <input type="text" id="lastname" placeholder="Nom" />
+            <input type="text" id="mail" placeholder="email" />
+            <input
+              id="subject"
+              type="text"
+              placeholder="sujet de votre message"
+            />
+            <textarea id="message">Votre message</textarea>
+            <button>Envoyer le message</button>
+          </form>
+        </div>
+        </div>
+      </div>
+
+        
       
         </nav>
       </div>
